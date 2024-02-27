@@ -1,0 +1,8 @@
+services:
+  - name: frontend
+    buildCommand: npm run build
+    startCommand: npm run start
+
+  - name: backend
+    buildCommand: npm install
+    startCommand: node server.js

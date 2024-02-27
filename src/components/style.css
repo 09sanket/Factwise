@@ -1,0 +1,260 @@
+/* Global styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header styles */
+.person-h1 {
+  margin-left: 16%;
+  color: #007bff;
+}
+
+ /* .person-list{
+  border: 0.5px solid #ccc;
+  margin: 28px;
+  width: 41%;
+  padding: 30px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease; */
+/* }  */
+
+.person-list input {
+  margin-left: 7%;
+  padding: 14px;
+  width: 40%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Load more button styles */
+.load-more {
+  margin-left: 7%;
+  padding: 15px;
+  border-radius: 11px;
+  color: #f3f5f7;
+  border: 1px solid #ccc;
+  background-color: #007bff;
+}
+
+/* Person card styles */
+.person-card {
+  /* border: 0.5px solid #ccc; */
+  padding: 5px;
+  margin-top: 7px;
+  position: relative;
+  margin-left: 5px;
+  /* box-shadow: 3px 3px 2px 4px rgba(0.1, 0.3, 0.5, 0.1); 
+  transition: box-shadow 0.3s ease; */
+
+}
+
+.person-card:hover {
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  */
+}
+
+/* Person details styles */
+.person-details {
+  flex: 1;
+  padding: 10px;
+}
+
+.person-details img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.person-details h2 {
+  margin-bottom: 10px;
+}
+
+.person-details p {
+  margin-bottom: 5px;
+}
+
+/* Details actions styles */
+.details-actions {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Edit and delete icon styles */
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  margin-left: 15px;
+  margin-top: 17px;
+  padding-top: 10px;
+}
+
+/* Edit and delete icon hover styles */
+.edit-icon:hover,
+.delete-icon:hover {
+  color: #007bff;
+}
+
+/* Accordion list item styles */
+.person-list-item {
+  margin-left: 4%;
+  list-style: none;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  width: 38%; /* Adjust the width to 100% for mobile devices */
+  position: relative;
+  padding-right: 30px;
+  transition: background-color 0.3s ease;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Delete confirmation styles */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-confirmation {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.delete-confirmation p {
+  margin-bottom: 20px;
+}
+
+.delete-confirmation button {
+  background: #dc3545;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.delete-confirmation button:hover {
+  background: #c82333;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 600px) {
+  /* Adjust styles for screens up to 600 pixels wide */
+  .person-h1,
+  .person-list input,
+  .load-more,
+  .person-card,
+  .person-list-item {
+    /* Adjust margins for smaller screens */
+  }
+
+  .person-h1
+  {
+  
+    margin-left: 25%;
+  }
+
+   .load-more{
+
+    margin-left: 32%;
+
+  }
+
+  .person-list{
+
+    margin-left: 4%;
+
+  }
+  
+
+  .person-list input {
+    width: 80%;
+    margin-left: 11%; /* Adjust the width for smaller screens */
+  }
+
+  .person-list-item {
+    width: 71%; /* Adjust the width for smaller screens */
+  }
+}
+
+/* Edit form styles */
+.edit-form {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.edit-form h3 {
+  color: #fff;
+  width: 100%;
+}
+
+.edit-form label {
+  display: block;
+  margin-bottom: 10px;
+  width: 48%; /* Two fields per row */
+}
+
+.edit-form input,
+.edit-form select,
+.edit-form textarea {
+  width: 80%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.edit-form input,
+.edit-form select,
+.edit-form textarea{
+  margin-top: 10px;
+  
+}
+
+.edit-form textarea{
+  width: 100%;
+  height: 50%;
+}
+
+/* Style the button */
+.edit-form button {
+  background: #fff;
+  color: #007bff;
+  margin-right: 10px;
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 3px;
+  margin-bottom: 12px;
+}
+
+.edit-form button:hover {
+  background: #007bff;
+  color: #fff;
+}
