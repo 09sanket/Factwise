@@ -1,5 +1,5 @@
 // dataUtils.ts
-const apiUrl = 'https://factwise.onrender.com/api/persons';
+const apiUrl = 'http://localhost:3001/api/persons';
 
 interface Person {
   id: number;

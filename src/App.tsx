@@ -8,7 +8,7 @@ const App: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://factwise.onrender.com/api/persons');
+        const response = await fetch('http://localhost:3001/api/persons');
         const data = await response.json();
         setPersonsData(data);
       } catch (error) {

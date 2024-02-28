@@ -1,4 +1,3 @@
-// PersonList.tsx
 import React, { useState } from 'react';
 import PersonDetails from './PersonDetails.tsx';
 import { Person } from '../dataUtils.ts';
@@ -139,5 +138,5 @@ const PersonList: React.FC<PersonListProps> = ({ persons, setPersonsData }) => {
       </div>
     );
   };
-  
+
   export default PersonList;
